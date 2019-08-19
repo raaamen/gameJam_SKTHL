@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -11,12 +12,17 @@ public class GameManager : MonoBehaviour {
     public int gameTimer;
     public int totalTrash;
 
-    public bool hasWon;
+    public AudioClip[] bgm;
+    public AudioClip[] sfx;
 
+    public AudioSource bgmsrc;
+    public AudioSource sfxsrc;
+
+    public bool hasWon;
 
 	// Use this for initialization
 	void Start () {
-		
+        DontDestroyOnLoad(gameObject);
 	}
 	
 	// Update is called once per frame
@@ -27,6 +33,8 @@ public class GameManager : MonoBehaviour {
             hasWon = true;
             //win condition
         }
+
+
 
     }
 
@@ -39,4 +47,5 @@ public class GameManager : MonoBehaviour {
     {
 
     }
+   
 }

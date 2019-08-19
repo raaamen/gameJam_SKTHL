@@ -23,23 +23,27 @@ public class scr_playerMovement : MonoBehaviour {
 	void Update () {
 
         //player movement is WASD
+        if (isActiveAndEnabled) {
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            GetComponent<Transform>().position += upSpd;
+            if (Input.GetKey(KeyCode.W))
+            {
+                GetComponent<Transform>().position += upSpd;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                GetComponent<Transform>().position += leftSpd;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                GetComponent<Transform>().position += downSpd;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                GetComponent<Transform>().position += rightSpd;
+            }
+
         }
-        if (Input.GetKey(KeyCode.A))
-        {
-            GetComponent<Transform>().position += leftSpd;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            GetComponent<Transform>().position += downSpd;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            GetComponent<Transform>().position += rightSpd;
-        }
+
 
         //trash is picked up oncollision and pressing spacebar
 
@@ -75,6 +79,10 @@ public class scr_playerMovement : MonoBehaviour {
             holdingTrash = false;
 
         }
+
+
+
+        /*
         if (collision.gameObject.tag == "ArcadeMachine")
         {
 
@@ -91,6 +99,12 @@ public class scr_playerMovement : MonoBehaviour {
         {
 
         }
+        */  
+
+
+
+
+             
     }
 
 }
