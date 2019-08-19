@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject playerObj;
     public GameObject trashObj;
+    public GameObject winScreen;
 
     public int gameTimer;
     public int totalTrash;
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour {
     public AudioSource sfxsrc;
 
     public bool hasWon;
+    public bool titleOnScreen;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour {
         if (totalTrash == 0)
         {
             hasWon = true;
+            winScreen.SetActive(true);
+
             //win condition
         }
 
