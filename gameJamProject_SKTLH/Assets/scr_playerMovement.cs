@@ -10,12 +10,13 @@ public class scr_playerMovement : MonoBehaviour {
     public Vector3 rightSpd;
 
     public GameObject trash;
+   
 
     public bool holdingTrash;
 
 	// Use this for initialization
 	void Start () {
-		
+        holdingTrash = false;
 	}
 	
 	// Update is called once per frame
@@ -48,9 +49,47 @@ public class scr_playerMovement : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Trash" && Input.GetKeyDown(KeyCode.Space))
         {
+            if (holdingTrash == false)
+            {
+                holdingTrash = true;
+            }
+
+            switch (holdingTrash)
+            {
+                case false:
+                    //switch sprite to holding
+                    holdingTrash = true;
+                    Destroy(collision.gameObject);
+                    break;
+                case true:
+                    GetComponent<scr_playerInv>().addRecycle();
+                    Destroy(collision.gameObject);
+                    break;
+            }
             Debug.Log("Trash collected");
-            GetComponent<scr_playerInv>().addRecycle();
-            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.name.Equals("obj_trashCan"))
+        {
+            //all trash deposited
+            GetComponent<scr_playerInv>().depositAllTrash();
+            holdingTrash = false;
+
+        }
+        if (collision.gameObject.tag == "ArcadeMachine")
+        {
+
+        }
+        if (collision.gameObject.tag == "Pool")
+        {
+
+        }
+        if (collision.gameObject.tag == "Table")
+        {
+
+        }
+        if (collision.gameObject.tag == "ArcadeMachine")
+        {
+
         }
     }
 

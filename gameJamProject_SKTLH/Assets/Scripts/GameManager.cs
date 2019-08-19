@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour {
     public GameObject trashObj;
 
     public int gameTimer;
-    public int playerScore;
+    public int totalTrash;
+
+    public bool hasWon;
 
 
 	// Use this for initialization
@@ -19,8 +21,14 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        if (totalTrash == 0)
+        {
+            hasWon = true;
+            //win condition
+        }
+
+    }
 
     //trash spawns randomly in the outside world
     //inside, they are in dedicated positions
