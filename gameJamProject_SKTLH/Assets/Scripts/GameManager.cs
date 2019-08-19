@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+    public GameObject playerObj;
+    public GameObject trashObj;
+
     public int playerScore;
 
 	// Use this for initialization
