@@ -40,10 +40,11 @@ public class scr_camManage : MonoBehaviour {
                 isHome = false;
                 isInArcade = false;
                 isInPizzaShop = false;
-
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
-
+                GetComponent<GameManager>().bgmsrc.Play();
                 mainCam.GetComponent<Transform>().position = outsidePos;
+
+
 
                 break;
             case "PizzaParlor":
@@ -54,7 +55,8 @@ public class scr_camManage : MonoBehaviour {
                 isHome = false;
                 isInArcade = false;
                 isInPizzaShop = true;
-
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
+                GetComponent<GameManager>().bgmsrc.Play();
                 mainCam.GetComponent<Transform>().position = pizzaPos;
 
                 break;
@@ -66,7 +68,8 @@ public class scr_camManage : MonoBehaviour {
                 isHome = false;
                 isInArcade = true;
                 isInPizzaShop = false;
-
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
+                GetComponent<GameManager>().bgmsrc.Play();
                 mainCam.GetComponent<Transform>().position = arcadePos;
 
                 break;
@@ -77,7 +80,8 @@ public class scr_camManage : MonoBehaviour {
                 isHome = false;
                 isInArcade = false;
                 isInPizzaShop = false;
-
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
+                GetComponent<GameManager>().bgmsrc.Play();
                 mainCam.GetComponent<Transform>().position = poolPos;
 
                 break;
@@ -89,8 +93,11 @@ public class scr_camManage : MonoBehaviour {
                 isHome = true;
                 isInArcade = false;
                 isInPizzaShop = false;
-
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
+                GetComponent<GameManager>().bgmsrc.Play();
                 mainCam.GetComponent<Transform>().position = homePos;
+
+
 
                 break;
         }

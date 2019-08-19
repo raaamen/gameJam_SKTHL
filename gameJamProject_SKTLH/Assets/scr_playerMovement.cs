@@ -100,11 +100,29 @@ public class scr_playerMovement : MonoBehaviour {
 
         }
         */  
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        switch (collision.gameObject.name)
+        {
+            case "pizzaCollider":
+                GetComponent<scr_camManage>().currentArea = "PizzaParlor";
+                break;
+            case "poolCollider":
+                GetComponent<scr_camManage>().currentArea = "Pool";
+                break;
+            case "homeCollider":
+                GetComponent<scr_camManage>().currentArea = "Home";
+                break;
+            case "arcadeCollider":
+                GetComponent<scr_camManage>().currentArea = "Arcade";
+                break;
+            case "outsideCollider":
+                GetComponent<scr_camManage>().currentArea = "Outside";
+                break;
+        }
 
 
-
-
-             
     }
 
 }
