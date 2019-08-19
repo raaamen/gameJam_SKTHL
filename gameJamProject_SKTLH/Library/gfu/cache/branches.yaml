@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 2
+  lastUpdatedAtString: 2019-08-19T16:30:06.115-04:00
+  initializedAtString: 2019-08-19T12:09:52.918-04:00
+  localBranches:
+  - name: master
+    tracking: origin/master
+  - name: sarah_branch
+    tracking: origin/sarah_branch
+  remoteBranches:
+  - name: origin/master
+    tracking: '[None]'
+  - name: origin/sarah_branch
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/raaamen/gameJam_SKTHL.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  localConfigBranches:
+    keys:
+    - master
+    - sarah_branch
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/raaamen/gameJam_SKTHL.git
+      trackingBranch: master
+    - name: sarah_branch
+      remote:
+        name: origin
+        url: https://github.com/raaamen/gameJam_SKTHL.git
+      trackingBranch: sarah_branch
+  remoteConfigBranches:
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - master
+      - sarah_branch
+    subKeyValues:
+    - Values:
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
+      - name: sarah_branch
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
+  configRemotes:
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/raaamen/gameJam_SKTHL.git

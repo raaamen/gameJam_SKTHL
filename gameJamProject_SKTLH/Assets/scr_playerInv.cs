@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class scr_playerInv : MonoBehaviour {
+
+    public List<Trash> inventoryFull;
+
+    public GameObject gameManager;
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	// Update is called once per frame
+	void Update () {
+		
+	}
+    public void addRecycle()
+    {
+        Recycle recycling = new Recycle();
+        inventoryFull.Add(recycling);
+    }
+    public void depositAllTrash()
+    {
+        foreach (var item in inventoryFull)
+        {
+            gameManager.GetComponent<GameManager>().totalTrash--;
+        }
+        inventoryFull.Clear();
+    }
+
+
+}
