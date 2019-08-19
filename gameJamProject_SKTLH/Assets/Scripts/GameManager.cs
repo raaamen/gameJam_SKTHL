@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour {
     public GameObject playerObj;
     public GameObject trashObj;
 
+    public int gameTimer;
     public int playerScore;
+
 
 	// Use this for initialization
 	void Start () {
@@ -19,4 +21,14 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    //trash spawns randomly in the outside world
+    //inside, they are in dedicated positions
+    //once all garbage is gone, win condition
+    //roadblocks to block way
+
+    public void initTrash()
+    {
+
+    }
 }

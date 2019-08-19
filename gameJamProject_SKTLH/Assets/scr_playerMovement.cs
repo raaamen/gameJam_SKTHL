@@ -9,6 +9,10 @@ public class scr_playerMovement : MonoBehaviour {
     public Vector3 leftSpd;
     public Vector3 rightSpd;
 
+    public GameObject trash;
+
+    public bool holdingTrash;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +20,8 @@ public class scr_playerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        //player movement is WASD
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -34,5 +40,18 @@ public class scr_playerMovement : MonoBehaviour {
             GetComponent<Transform>().position += rightSpd;
         }
 
+        //trash is picked up oncollision and pressing spacebar
+
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Trash" && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Trash collected");
+            GetComponent<scr_playerInv>().addRecycle();
+            Destroy(collision.gameObject);
+        }
+    }
+
 }

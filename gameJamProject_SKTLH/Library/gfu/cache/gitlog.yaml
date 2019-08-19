@@ -12,9 +12,177 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-08-19T12:14:24.428-04:00
+  lastUpdatedAtString: 2019-08-19T12:30:27.024-04:00
   initializedAtString: 2019-08-19T12:09:53.362-04:00
   log:
+  - commitID: e3b07983a5c208169118bbb673c297428dd63ba1
+    mergeA: 
+    mergeB: 
+    authorName: raaamen
+    authorEmail: sarahapplebaum.sia@gmail.com
+    commitEmail: sarahapplebaum.sia@gmail.com
+    commitName: raaamen
+    summary: PlayerMvmt + GM
+    description: 
+    timeString: 2019-08-19T12:28:29.000-04:00
+    commitTimeString: 2019-08-19T12:28:29.000-04:00
+    changes:
+    - path: gameJamProject_SKTLH/Assets/SceneMain.unity
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/SceneMain.unity
+      projectPath: Assets/SceneMain.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Assets/Scripts/GameManager.cs
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Scripts/GameManager.cs
+      projectPath: Assets/Scripts/GameManager.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Assets/scr_playerMovement.cs
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/scr_playerMovement.cs
+      projectPath: Assets/scr_playerMovement.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Assets/scr_playerMovement.cs.meta
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/scr_playerMovement.cs.meta
+      projectPath: Assets/scr_playerMovement.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ScriptAssemblies/Assembly-CSharp.dll
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ScriptAssemblies/Assembly-CSharp.dll
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ShaderCache/0/0504cc70288762268d57702f92773d1f.bin
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ShaderCache/0/0504cc70288762268d57702f92773d1f.bin
+      projectPath: Library/ShaderCache/0/0504cc70288762268d57702f92773d1f.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ShaderCache/4/462d2c5a8d4ecc7880c5e0c9521b9b42.bin
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ShaderCache/4/462d2c5a8d4ecc7880c5e0c9521b9b42.bin
+      projectPath: Library/ShaderCache/4/462d2c5a8d4ecc7880c5e0c9521b9b42.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ShaderCache/4/4a9449fff45b1cdff165435ee1209c34.bin
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ShaderCache/4/4a9449fff45b1cdff165435ee1209c34.bin
+      projectPath: Library/ShaderCache/4/4a9449fff45b1cdff165435ee1209c34.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ShaderCache/7/768594d9c2e9568e871411d686d987aa.bin
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ShaderCache/7/768594d9c2e9568e871411d686d987aa.bin
+      projectPath: Library/ShaderCache/7/768594d9c2e9568e871411d686d987aa.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ShaderCache/a/a2fcdd5feda459360ab1e9878ffe3a69.bin
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ShaderCache/a/a2fcdd5feda459360ab1e9878ffe3a69.bin
+      projectPath: Library/ShaderCache/a/a2fcdd5feda459360ab1e9878ffe3a69.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/ShaderCache/f/fb10518efefe8e6056e5a9a132cead51.bin
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/ShaderCache/f/fb10518efefe8e6056e5a9a132cead51.bin
+      projectPath: Library/ShaderCache/f/fb10518efefe8e6056e5a9a132cead51.bin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/assetDatabase3
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/assetDatabase3
+      projectPath: Library/assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/gfu/cache/branches.yaml
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/branches.yaml
+      projectPath: Library/gfu/cache/branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3
+      projectPath: Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3.info
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3.info
+      projectPath: Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3.info
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/metadata/b1/b1a07da313831410fbb86b243baf5054
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/b1/b1a07da313831410fbb86b243baf5054
+      projectPath: Library/metadata/b1/b1a07da313831410fbb86b243baf5054
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Library/shadercompiler-UnityShaderCompiler0.log
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/shadercompiler-UnityShaderCompiler0.log
+      projectPath: Library/shadercompiler-UnityShaderCompiler0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Temp/UnityTempFile-09891f21ed121492094b2511158ae413
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-09891f21ed121492094b2511158ae413
+      projectPath: Temp/UnityTempFile-09891f21ed121492094b2511158ae413
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Temp/UnityTempFile-5532a6fa41ee54178b426b495dc19dfc
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-5532a6fa41ee54178b426b495dc19dfc
+      projectPath: Temp/UnityTempFile-5532a6fa41ee54178b426b495dc19dfc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Temp/UnityTempFile-8a9fc8213dbbd47038786acbd2cbe39a
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-8a9fc8213dbbd47038786acbd2cbe39a
+      projectPath: Temp/UnityTempFile-8a9fc8213dbbd47038786acbd2cbe39a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameJamProject_SKTLH/Temp/UnityTempFile-c97eb69def85043bc9ecc91da93b281a
+      fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-c97eb69def85043bc9ecc91da93b281a
+      projectPath: Temp/UnityTempFile-c97eb69def85043bc9ecc91da93b281a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
   - commitID: 506f615a733ccdc7ddaa77b3ab78d981336fadca
     mergeA: 
     mergeB: 
