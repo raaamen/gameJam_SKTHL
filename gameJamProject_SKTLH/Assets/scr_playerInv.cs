@@ -6,7 +6,7 @@ public class scr_playerInv : MonoBehaviour {
 
     public List<Trash> inventoryFull;
 
-    public GameObject gameManager;
+    public GameObject player;
 
 	// Use this for initialization
 	void Start () {
@@ -19,13 +19,20 @@ public class scr_playerInv : MonoBehaviour {
     public void addRecycle()
     {
         Recycle recycling = new Recycle();
-        inventoryFull.Add(recycling);
+        if (inventoryFull.Count<=4)
+        {
+            inventoryFull.Add(recycling);
+        }
+        else
+        {
+            player.GetComponent<scr_playerMovement>().invFull = true;
+        }
     }
     public void depositAllTrash()
     {
         foreach (var item in inventoryFull)
         {
-            gameManager.GetComponent<GameManager>().totalTrash--;
+            GetComponent<GameManager>().totalTrash--;
         }
         inventoryFull.Clear();
     }

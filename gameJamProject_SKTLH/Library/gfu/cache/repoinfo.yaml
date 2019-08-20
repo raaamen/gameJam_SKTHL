@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-08-19T12:09:52.923-04:00
-  initializedAtString: 2019-08-19T12:09:17.777-04:00
+  lastUpdatedAtString: 2019-08-20T10:37:31.537-04:00
+  initializedAtString: 2019-08-20T10:37:31.537-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/raaamen/gameJam_SKTHL.git
@@ -23,14 +23,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: sarah_branch
-    tracking: origin/sarah_branch
+    name: sarahMaster
+    tracking: origin/sarahMaster
   currentConfigBranch:
-    name: sarah_branch
+    name: sarahMaster
     remote:
       name: origin
       url: https://github.com/raaamen/gameJam_SKTHL.git
-    trackingBranch: sarah_branch
+    trackingBranch: sarahMaster
   currentConfigRemote:
     name: origin
     url: https://github.com/raaamen/gameJam_SKTHL.git

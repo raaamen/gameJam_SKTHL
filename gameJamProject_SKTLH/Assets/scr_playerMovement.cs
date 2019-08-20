@@ -10,9 +10,10 @@ public class scr_playerMovement : MonoBehaviour {
     public Vector3 rightSpd;
 
     public GameObject trash;
-   
+    public GameObject gameManager;
 
     public bool holdingTrash;
+    public bool invFull;
 
 	// Use this for initialization
 	void Start () {
@@ -66,8 +67,11 @@ public class scr_playerMovement : MonoBehaviour {
                     Destroy(collision.gameObject);
                     break;
                 case true:
-                    GetComponent<scr_playerInv>().addRecycle();
-                    Destroy(collision.gameObject);
+                    gameManager.GetComponent<scr_playerInv>().addRecycle();
+                    if (!invFull)
+                    {
+                        Destroy(collision.gameObject);
+                    }
                     break;
             }
             Debug.Log("Trash collected");
@@ -75,8 +79,9 @@ public class scr_playerMovement : MonoBehaviour {
         if (collision.gameObject.name.Equals("obj_trashCan"))
         {
             //all trash deposited
-            GetComponent<scr_playerInv>().depositAllTrash();
+            gameManager.GetComponent<scr_playerInv>().depositAllTrash();
             holdingTrash = false;
+            invFull = false;
 
         }
 
