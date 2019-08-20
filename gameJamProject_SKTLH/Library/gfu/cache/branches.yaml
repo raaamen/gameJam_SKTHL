@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-08-20T10:37:32.199-04:00
+  lastUpdatedAtString: 2019-08-20T11:00:07.173-04:00
   initializedAtString: 2019-08-20T10:37:32.140-04:00
   localBranches:
   - name: master
@@ -26,6 +26,8 @@ MonoBehaviour:
   - name: tafari_culzac
     tracking: origin/tafari_culzac
   remoteBranches:
+  - name: origin/hasani_branch
+    tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   - name: origin/sarahMaster
@@ -82,6 +84,7 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - hasani_branch
       - master
       - sarahMaster
       - sarah_branch
@@ -89,6 +92,11 @@ MonoBehaviour:
       - tafari_culzac
     subKeyValues:
     - Values:
+      - name: hasani_branch
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
       - name: master
         remote:
           name: origin

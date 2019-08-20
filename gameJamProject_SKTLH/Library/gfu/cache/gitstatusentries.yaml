@@ -12,42 +12,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-08-20T10:59:45.057-04:00
+  lastUpdatedAtString: 2019-08-20T11:27:15.163-04:00
   initializedAtString: 2019-08-20T10:37:31.546-04:00
   entries:
-  - path: gameJamProject_SKTLH/Assets/Prefabs.meta
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Prefabs.meta
-    projectPath: Assets/Prefabs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Assets/Prefabs/obj_trash.prefab
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Prefabs/obj_trash.prefab
-    projectPath: Assets/Prefabs/obj_trash.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Assets/Prefabs/obj_trash.prefab.meta
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Prefabs/obj_trash.prefab.meta
-    projectPath: Assets/Prefabs/obj_trash.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: gameJamProject_SKTLH/Assets/Scenes/SceneMain.unity
     fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Scenes/SceneMain.unity
     projectPath: Assets/Scenes/SceneMain.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameJamProject_SKTLH/Assets/scr_playerInv.cs
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/scr_playerInv.cs
-    projectPath: Assets/scr_playerInv.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: gameJamProject_SKTLH/Assets/scr_playerMovement.cs
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/scr_playerMovement.cs
-    projectPath: Assets/scr_playerMovement.cs
+  - path: gameJamProject_SKTLH/Assets/scr_camManage.cs
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/scr_camManage.cs
+    projectPath: Assets/scr_camManage.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -57,15 +33,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameJamProject_SKTLH/Assets/Sprites/StillSprites/rubbermaid-recycling-bins-fg-2956-73dblu-64_1000.jpg
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Sprites/StillSprites/rubbermaid-recycling-bins-fg-2956-73dblu-64_1000.jpg
-    projectPath: Assets/Sprites/StillSprites/rubbermaid-recycling-bins-fg-2956-73dblu-64_1000.jpg
+  - path: gameJamProject_SKTLH/Assets/Sprites/StillSprites/75244738-vector-succulent-plant-texture-drawing-seamless-pattern-background-great-for-subtle-botanical-modern.jpg
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Sprites/StillSprites/75244738-vector-succulent-plant-texture-drawing-seamless-pattern-background-great-for-subtle-botanical-modern.jpg
+    projectPath: Assets/Sprites/StillSprites/75244738-vector-succulent-plant-texture-drawing-seamless-pattern-background-great-for-subtle-botanical-modern.jpg
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Assets/Sprites/StillSprites/rubbermaid-recycling-bins-fg-2956-73dblu-64_1000.jpg.meta
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Sprites/StillSprites/rubbermaid-recycling-bins-fg-2956-73dblu-64_1000.jpg.meta
-    projectPath: Assets/Sprites/StillSprites/rubbermaid-recycling-bins-fg-2956-73dblu-64_1000.jpg.meta
+  - path: gameJamProject_SKTLH/Assets/Sprites/StillSprites/75244738-vector-succulent-plant-texture-drawing-seamless-pattern-background-great-for-subtle-botanical-modern.jpg.meta
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Assets/Sprites/StillSprites/75244738-vector-succulent-plant-texture-drawing-seamless-pattern-background-great-for-subtle-botanical-modern.jpg.meta
+    projectPath: Assets/Sprites/StillSprites/75244738-vector-succulent-plant-texture-drawing-seamless-pattern-background-great-for-subtle-botanical-modern.jpg.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -75,6 +51,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: gameJamProject_SKTLH/Library/CrashedAssetImports.txt
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/CrashedAssetImports.txt
+    projectPath: Library/CrashedAssetImports.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameJamProject_SKTLH/Library/CurrentMaximizeLayout.dwlt
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/CurrentMaximizeLayout.dwlt
+    projectPath: Library/CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: gameJamProject_SKTLH/Library/gfu/cache/branches.yaml
     fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/branches.yaml
     projectPath: Library/gfu/cache/branches.yaml
@@ -105,45 +93,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameJamProject_SKTLH/Library/gfu/cache/repoinfo.yaml
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/gfu/cache/repoinfo.yaml
-    projectPath: Library/gfu/cache/repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: gameJamProject_SKTLH/Library/metadata/25/2510ba534bd914e5092abd7939cef088
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/25/2510ba534bd914e5092abd7939cef088
-    projectPath: Library/metadata/25/2510ba534bd914e5092abd7939cef088
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Library/metadata/25/2510ba534bd914e5092abd7939cef088.info
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/25/2510ba534bd914e5092abd7939cef088.info
-    projectPath: Library/metadata/25/2510ba534bd914e5092abd7939cef088.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Library/metadata/94/9498d8b65a9f84d0ca2a63cec8a932b8
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/94/9498d8b65a9f84d0ca2a63cec8a932b8
-    projectPath: Library/metadata/94/9498d8b65a9f84d0ca2a63cec8a932b8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Library/metadata/94/9498d8b65a9f84d0ca2a63cec8a932b8.info
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/94/9498d8b65a9f84d0ca2a63cec8a932b8.info
-    projectPath: Library/metadata/94/9498d8b65a9f84d0ca2a63cec8a932b8.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Library/metadata/a2/a2a65c0f49e45403aa53a0119dcc4022
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/a2/a2a65c0f49e45403aa53a0119dcc4022
-    projectPath: Library/metadata/a2/a2a65c0f49e45403aa53a0119dcc4022
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: gameJamProject_SKTLH/Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3
-    projectPath: Library/metadata/a3/a36a369b94cd04e7593042993bce8fe3
+  - path: gameJamProject_SKTLH/Library/metadata/5d/5d02688b30e904267a0182ec190b4269
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/5d/5d02688b30e904267a0182ec190b4269
+    projectPath: Library/metadata/5d/5d02688b30e904267a0182ec190b4269
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -157,11 +109,23 @@ MonoBehaviour:
     fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/df/df1c9f07ef6e04a7a8898ad23e05e874
     projectPath: Library/metadata/df/df1c9f07ef6e04a7a8898ad23e05e874
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameJamProject_SKTLH/Library/metadata/df/df1c9f07ef6e04a7a8898ad23e05e874.info
     fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/df/df1c9f07ef6e04a7a8898ad23e05e874.info
     projectPath: Library/metadata/df/df1c9f07ef6e04a7a8898ad23e05e874.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameJamProject_SKTLH/Library/metadata/e8/e8794c3bb4c85411da2aa1430196c28f
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/e8/e8794c3bb4c85411da2aa1430196c28f
+    projectPath: Library/metadata/e8/e8794c3bb4c85411da2aa1430196c28f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameJamProject_SKTLH/Library/metadata/e8/e8794c3bb4c85411da2aa1430196c28f.info
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Library/metadata/e8/e8794c3bb4c85411da2aa1430196c28f.info
+    projectPath: Library/metadata/e8/e8794c3bb4c85411da2aa1430196c28f.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -177,57 +141,57 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameJamProject_SKTLH/ProjectSettings/UnityConnectSettings.asset
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/ProjectSettings/UnityConnectSettings.asset
-    projectPath: ProjectSettings/UnityConnectSettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: gameJamProject_SKTLH/Temp/__Backupscenes/0.backup
     fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/__Backupscenes/0.backup
     projectPath: Temp/__Backupscenes/0.backup
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-19f61c163b774471db0566a684604562
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-19f61c163b774471db0566a684604562
-    projectPath: Temp/UnityTempFile-19f61c163b774471db0566a684604562
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-4ded0ebbdb3084332ba2ff43972b7ba3
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-4ded0ebbdb3084332ba2ff43972b7ba3
+    projectPath: Temp/UnityTempFile-4ded0ebbdb3084332ba2ff43972b7ba3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-38f3b3e697c5548b0af986e3ceb3b33b
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-38f3b3e697c5548b0af986e3ceb3b33b
-    projectPath: Temp/UnityTempFile-38f3b3e697c5548b0af986e3ceb3b33b
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-89587456b350e443aaea1c6c34618d7c
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-89587456b350e443aaea1c6c34618d7c
+    projectPath: Temp/UnityTempFile-89587456b350e443aaea1c6c34618d7c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-a950c00f7b2f54858b29f7dd17c37fcc
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-a950c00f7b2f54858b29f7dd17c37fcc
-    projectPath: Temp/UnityTempFile-a950c00f7b2f54858b29f7dd17c37fcc
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-93cfd7555969c4cc7a684bc758d40e68
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-93cfd7555969c4cc7a684bc758d40e68
+    projectPath: Temp/UnityTempFile-93cfd7555969c4cc7a684bc758d40e68
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-b847015defc0e43eb80b850ab3741137
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-b847015defc0e43eb80b850ab3741137
-    projectPath: Temp/UnityTempFile-b847015defc0e43eb80b850ab3741137
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-b112cb3b818244e558e28fe8894e1061
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-b112cb3b818244e558e28fe8894e1061
+    projectPath: Temp/UnityTempFile-b112cb3b818244e558e28fe8894e1061
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-c75794fd648a743cd92b2351e2a61361
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-c75794fd648a743cd92b2351e2a61361
-    projectPath: Temp/UnityTempFile-c75794fd648a743cd92b2351e2a61361
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-b29991acd4f954355a7eb437614337d0
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-b29991acd4f954355a7eb437614337d0
+    projectPath: Temp/UnityTempFile-b29991acd4f954355a7eb437614337d0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-f076e9f8e992c4ad397783dd3126ed79
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-f076e9f8e992c4ad397783dd3126ed79
-    projectPath: Temp/UnityTempFile-f076e9f8e992c4ad397783dd3126ed79
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-bb7c9e206ce27438ea9059d630867891
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-bb7c9e206ce27438ea9059d630867891
+    projectPath: Temp/UnityTempFile-bb7c9e206ce27438ea9059d630867891
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameJamProject_SKTLH/Temp/UnityTempFile-f7d2d2f0c467347dcb3f28b8584211e6
-    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-f7d2d2f0c467347dcb3f28b8584211e6
-    projectPath: Temp/UnityTempFile-f7d2d2f0c467347dcb3f28b8584211e6
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-d5a651d1f84fc4f199fb7cd97d42f4b5
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-d5a651d1f84fc4f199fb7cd97d42f4b5
+    projectPath: Temp/UnityTempFile-d5a651d1f84fc4f199fb7cd97d42f4b5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameJamProject_SKTLH/Temp/UnityTempFile-e1f34a6b6f82a437fa428008b5afe6e6
+    fullPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH/Temp/UnityTempFile-e1f34a6b6f82a437fa428008b5afe6e6
+    projectPath: Temp/UnityTempFile-e1f34a6b6f82a437fa428008b5afe6e6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

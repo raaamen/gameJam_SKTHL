@@ -15,6 +15,7 @@ public class scr_camManage : MonoBehaviour {
     public Vector3 arcadePos;
     public Vector3 poolPos;
     public Vector3 homePos;
+    public Vector3 camPosPlayer;
 
     public string currentArea;
 
@@ -24,7 +25,7 @@ public class scr_camManage : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        currentArea = "Outside";
 	}
 	
 	// Update is called once per frame
@@ -34,6 +35,7 @@ public class scr_camManage : MonoBehaviour {
         switch (currentArea)
         {
             case "Outside":
+                mainCam.GetComponent<Camera>().orthographicSize = 3.7f;
                 outsidePlayer.SetActive(true);
                 isOutside = true;
                 isInPool = false;
@@ -42,7 +44,13 @@ public class scr_camManage : MonoBehaviour {
                 isInPizzaShop = false;
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
                 GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = outsidePos;
+
+
+                //cam follow script
+
+                camPosPlayer = new Vector3(outsidePlayer.GetComponent<Transform>().position.x, outsidePlayer.GetComponent<Transform>().position.y, -10f);
+
+                mainCam.GetComponent<Transform>().position = camPosPlayer;
 
 
 

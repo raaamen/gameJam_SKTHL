@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         totalTrash = 1;
+        initTrash();
 	}
 	
 	// Update is called once per frame
@@ -50,6 +51,32 @@ public class GameManager : MonoBehaviour {
     public void initTrash()
     {
 
+        for (int i = 0; i < 11; i++)
+        {
+            //Instantiate at positions
+
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+
+
+
+
     }
-   
+
 }
