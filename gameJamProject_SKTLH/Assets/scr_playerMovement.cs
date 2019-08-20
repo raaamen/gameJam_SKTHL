@@ -8,6 +8,10 @@ public class scr_playerMovement : MonoBehaviour {
     public Vector3 downSpd;
     public Vector3 leftSpd;
     public Vector3 rightSpd;
+    public Vector3 pizzaSpawn;
+    public Vector3 poolSpawn;
+    public Vector3 arcadeSpawn;
+    public Vector3 homeSpawn;
 
     public GameObject trash;
     public GameObject gameManager;
@@ -33,27 +37,27 @@ public class scr_playerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.W))
             {
                 GetComponent<Transform>().position += upSpd;
-                
+
             }
-            if (Input.GetKey(KeyCode.A))
+            else if (Input.GetKey(KeyCode.A))
             {
                 GetComponent<Transform>().position += leftSpd;
 
 
             }
-            if (Input.GetKey(KeyCode.S))
+            else if (Input.GetKey(KeyCode.S))
             {
                 GetComponent<Transform>().position += downSpd;
 
             }
-            if (Input.GetKey(KeyCode.D))
+            else if (Input.GetKey(KeyCode.D))
             {
                 GetComponent<Transform>().position += rightSpd;
 
             }
             else
             {
-
+                GetComponent<Animator>().Play("plrIdle");
             }
         }
 

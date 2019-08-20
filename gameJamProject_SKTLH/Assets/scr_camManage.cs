@@ -48,22 +48,22 @@ public class scr_camManage : MonoBehaviour
             case "PizzaParlor":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
                 GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = pizzaPos;
+
                 break;
             case "Arcade":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
                 GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = arcadePos;
+
                 break;
             case "Pool":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
                 GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = poolPos;
+               
                 break;
             case "Home":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
                 GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = homePos;
+
                 break;
         }
 
