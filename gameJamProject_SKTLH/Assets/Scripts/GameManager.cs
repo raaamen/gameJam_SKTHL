@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        totalTrash = 1;
+        totalTrash = GameObject.FindGameObjectsWithTag("Trash").Length;
         initTrash();
 	}
 	
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
         {
             hasWon = true;
             winScreen.SetActive(true);
-
+            GetComponent<scr_camManage>().currentArea = "Win";
             //win condition
         }
 
@@ -53,7 +53,8 @@ public class GameManager : MonoBehaviour {
         for (int i = 0; i < 11; i++)
         {
             //Instantiate at positions
-
+            //int x = Random.Range();
+            Vector3 vec = new Vector3();
 
         }
         for (int i = 0; i < 11; i++)

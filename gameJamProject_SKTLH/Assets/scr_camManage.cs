@@ -22,12 +22,12 @@ public class scr_camManage : MonoBehaviour
 
     public GameObject outsidePlayer;
     public GameObject mainCam;
-
+    public GameObject titleScreen;
 
     // Use this for initialization
     void Start()
     {
-        currentArea = "Outside";
+        currentArea = "Title";
     }
 
     // Update is called once per frame
@@ -41,29 +41,28 @@ public class scr_camManage : MonoBehaviour
         }
         switch (currentArea)
         {
+            case "Title":
+                titleScreen.SetActive(true);
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[5];
+                break;
             case "Outside":
                 mainCam.GetComponent<Camera>().orthographicSize = 3.7f;
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
                 break;
             case "PizzaParlor":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
-                GetComponent<GameManager>().bgmsrc.Play();
-
                 break;
             case "Arcade":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
-                GetComponent<GameManager>().bgmsrc.Play();
-
                 break;
             case "Pool":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
-                GetComponent<GameManager>().bgmsrc.Play();
-               
                 break;
             case "Home":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
-                GetComponent<GameManager>().bgmsrc.Play();
-
+                break;
+            case "Win":
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[6];
                 break;
         }
 
