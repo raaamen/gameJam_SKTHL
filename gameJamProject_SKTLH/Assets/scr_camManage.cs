@@ -35,12 +35,15 @@ public class scr_camManage : MonoBehaviour
     {
         camPosPlayer = new Vector3(outsidePlayer.GetComponent<Transform>().position.x, outsidePlayer.GetComponent<Transform>().position.y, -10f);
         mainCam.GetComponent<Transform>().position = camPosPlayer;
+        if (!GetComponent<GameManager>().bgmsrc.isPlaying)
+        {
+            GetComponent<GameManager>().bgmsrc.Play();
+        }
         switch (currentArea)
         {
             case "Outside":
                 mainCam.GetComponent<Camera>().orthographicSize = 3.7f;
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
-                GetComponent<GameManager>().bgmsrc.Play();
                 break;
             case "PizzaParlor":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];

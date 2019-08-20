@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour {
     public GameObject trashObj;
     public GameObject winScreen;
 
-    public int gameTimer;
     public int totalTrash;
 
     public AudioClip[] bgm;
