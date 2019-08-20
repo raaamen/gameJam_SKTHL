@@ -15,6 +15,10 @@ public class scr_playerMovement : MonoBehaviour {
     public bool holdingTrash;
     public bool invFull;
 
+    public AudioSource SFX;
+
+    public AudioClip[] audioClipsSFX;
+
 	// Use this for initialization
 	void Start () {
         holdingTrash = false;
@@ -29,20 +33,28 @@ public class scr_playerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.W))
             {
                 GetComponent<Transform>().position += upSpd;
+                
             }
             if (Input.GetKey(KeyCode.A))
             {
                 GetComponent<Transform>().position += leftSpd;
+
+
             }
             if (Input.GetKey(KeyCode.S))
             {
                 GetComponent<Transform>().position += downSpd;
+
             }
             if (Input.GetKey(KeyCode.D))
             {
                 GetComponent<Transform>().position += rightSpd;
-            }
 
+            }
+            else
+            {
+
+            }
         }
 
 
@@ -70,6 +82,8 @@ public class scr_playerMovement : MonoBehaviour {
                     gameManager.GetComponent<scr_playerInv>().addRecycle();
                     if (!invFull)
                     {
+                        SFX.GetComponent<AudioSource>().clip = audioClipsSFX[1];
+                        SFX.GetComponent<AudioSource>().Play();
                         Destroy(collision.gameObject);
                     }
                     break;
@@ -79,6 +93,8 @@ public class scr_playerMovement : MonoBehaviour {
         if (collision.gameObject.name.Equals("obj_trashCan"))
         {
             gameManager.GetComponent<scr_playerInv>().depositAllTrash();
+            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[2];
+            SFX.GetComponent<AudioSource>().Play();
             holdingTrash = false;
             invFull = false;
         }
