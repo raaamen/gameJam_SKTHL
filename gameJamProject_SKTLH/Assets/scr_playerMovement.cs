@@ -78,11 +78,9 @@ public class scr_playerMovement : MonoBehaviour {
         }
         if (collision.gameObject.name.Equals("obj_trashCan"))
         {
-            //all trash deposited
             gameManager.GetComponent<scr_playerInv>().depositAllTrash();
             holdingTrash = false;
             invFull = false;
-
         }
 
 
@@ -126,8 +124,6 @@ public class scr_playerMovement : MonoBehaviour {
                 GetComponent<scr_camManage>().currentArea = "Outside";
                 break;
         }
-
-
     }
 
 }
