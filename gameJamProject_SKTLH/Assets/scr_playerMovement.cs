@@ -169,18 +169,22 @@ public class scr_playerMovement : MonoBehaviour {
         {
             case "pizzaCollider":
                 GetComponent<scr_camManage>().currentArea = "PizzaParlor";
+                changePos(1);
                 break;
             case "poolCollider":
                 GetComponent<scr_camManage>().currentArea = "Pool";
                 break;
             case "homeCollider":
                 GetComponent<scr_camManage>().currentArea = "Home";
+                changePos(0);
                 break;
             case "arcadeCollider":
                 GetComponent<scr_camManage>().currentArea = "Arcade";
+                changePos(2);
                 break;
-            case "outsideCollider":
+            case "outsideColliderHome":
                 GetComponent<scr_camManage>().currentArea = "Outside";
+                changePos(3);
                 break;
         }
         if (collision.gameObject.name.Equals("obj_trashCan"))
@@ -190,6 +194,24 @@ public class scr_playerMovement : MonoBehaviour {
             SFX.GetComponent<AudioSource>().Play();
             holdingTrash = false;
             invFull = false;
+        }
+    }
+    public void changePos(int pos)
+    {
+        switch (pos)
+        {
+            case 0:
+                GetComponent<Transform>().position = GetComponent<scr_camManage>().homePos;
+                break;
+            case 1:
+                GetComponent<Transform>().position = GetComponent<scr_camManage>().pizzaPos;
+                break;
+            case 2:
+                GetComponent<Transform>().position = GetComponent<scr_camManage>().arcadePos;
+                break;
+            case 3:
+                GetComponent<Transform>().position = GetComponent<scr_camManage>().outsidePos;
+                break;
         }
     }
 

@@ -33,6 +33,7 @@ public class scr_camManage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         camPosPlayer = new Vector3(outsidePlayer.GetComponent<Transform>().position.x, outsidePlayer.GetComponent<Transform>().position.y, -10f);
         mainCam.GetComponent<Transform>().position = camPosPlayer;
         if (!GetComponent<GameManager>().bgmsrc.isPlaying)
@@ -47,9 +48,11 @@ public class scr_camManage : MonoBehaviour
                 break;
             case "Outside":
                 mainCam.GetComponent<Camera>().orthographicSize = 3.7f;
+
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
                 break;
             case "PizzaParlor":
+
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
                 break;
             case "Arcade":
@@ -67,4 +70,5 @@ public class scr_camManage : MonoBehaviour
         }
 
     }
+
 }
