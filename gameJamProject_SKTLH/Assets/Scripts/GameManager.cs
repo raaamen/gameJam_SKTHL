@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour {
     public GameObject trashObj;
     public GameObject winScreen;
 
-    public int gameTimer;
     public int totalTrash;
 
     public AudioClip[] bgm;
@@ -24,7 +23,8 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        totalTrash = GameObject.FindGameObjectsWithTag("Trash").Length;
+        initTrash();
 	}
 	
 	// Update is called once per frame
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
         {
             hasWon = true;
             winScreen.SetActive(true);
-
+            GetComponent<scr_camManage>().currentArea = "Win";
             //win condition
         }
 
@@ -50,6 +50,33 @@ public class GameManager : MonoBehaviour {
     public void initTrash()
     {
 
+        for (int i = 0; i < 11; i++)
+        {
+            //Instantiate at positions
+            //int x = Random.Range();
+            Vector3 vec = new Vector3();
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+        for (int i = 0; i < 11; i++)
+        {
+
+        }
+
+
+
+
     }
-   
+
 }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scr_camManage : MonoBehaviour {
+public class scr_camManage : MonoBehaviour
+{
 
     public bool isOutside;
     public bool isInPizzaShop;
@@ -10,97 +11,73 @@ public class scr_camManage : MonoBehaviour {
     public bool isInPool;
     public bool isHome;
 
-    public Vector3 outsidePos;
+    public Vector3 outsidePosHome;
+    public Vector3 outsidePosPizza;
+    public Vector3 outsidePosArcade;
     public Vector3 pizzaPos;
     public Vector3 arcadePos;
     public Vector3 poolPos;
     public Vector3 homePos;
+    public Vector3 camPosPlayer;
 
     public string currentArea;
 
     public GameObject outsidePlayer;
     public GameObject mainCam;
-    
+    public GameObject titleScreen;
+    public GameObject pizzaBG;
+    public GameObject arcadeBG;
+    public GameObject homeBG;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+        currentArea = "Title";
+    }
 
-
+    // Update is called once per frame
+    void Update()
+    {
+        homeBG.SetActive(false);
+        pizzaBG.SetActive(false);
+        arcadeBG.SetActive(false);
+        camPosPlayer = new Vector3(outsidePlayer.GetComponent<Transform>().position.x, outsidePlayer.GetComponent<Transform>().position.y, -10f);
+        mainCam.GetComponent<Transform>().position = camPosPlayer;
+        if (!GetComponent<GameManager>().bgmsrc.isPlaying)
+        {
+            GetComponent<GameManager>().bgmsrc.Play();
+        }
         switch (currentArea)
         {
+            case "Title":
+                titleScreen.SetActive(true);
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[5];
+                break;
             case "Outside":
-                outsidePlayer.SetActive(true);
-                isOutside = true;
-                isInPool = false;
-                isHome = false;
-                isInArcade = false;
-                isInPizzaShop = false;
+                mainCam.GetComponent<Camera>().orthographicSize = 3.7f;
+
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
-                GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = outsidePos;
-
-
-
                 break;
             case "PizzaParlor":
-
-
-                isOutside = false;
-                isInPool = false;
-                isHome = false;
-                isInArcade = false;
-                isInPizzaShop = true;
+                pizzaBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
-                GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = pizzaPos;
-
                 break;
             case "Arcade":
-
-
-                isOutside = false;
-                isInPool = false;
-                isHome = false;
-                isInArcade = true;
-                isInPizzaShop = false;
+                arcadeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
-                GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = arcadePos;
-
                 break;
             case "Pool":
-
-                isOutside = false;
-                isInPool = true;
-                isHome = false;
-                isInArcade = false;
-                isInPizzaShop = false;
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
-                GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = poolPos;
-
                 break;
             case "Home":
-
-
-                isOutside = false;
-                isInPool = false;
-                isHome = true;
-                isInArcade = false;
-                isInPizzaShop = false;
+                homeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
-                GetComponent<GameManager>().bgmsrc.Play();
-                mainCam.GetComponent<Transform>().position = homePos;
-
-
-
+                break;
+            case "Win":
+                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[6];
                 break;
         }
 
     }
+
 }

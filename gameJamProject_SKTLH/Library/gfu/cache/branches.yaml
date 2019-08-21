@@ -12,17 +12,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-08-19T16:30:06.115-04:00
-  initializedAtString: 2019-08-19T12:09:52.918-04:00
+  lastUpdatedAtString: 2019-08-21T11:22:11.006-04:00
+  initializedAtString: 2019-08-21T11:22:10.868-04:00
   localBranches:
+  - name: hasani_branch
+    tracking: origin/hasani_branch
   - name: master
     tracking: origin/master
+  - name: sarahMaster
+    tracking: origin/sarahMaster
   - name: sarah_branch
     tracking: origin/sarah_branch
+  - name: sarah_branch2
+    tracking: origin/sarah_branch2
+  - name: tafari_culzac
+    tracking: origin/tafari_culzac
   remoteBranches:
+  - name: origin/hasani_branch
+    tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
+  - name: origin/sarahMaster
+    tracking: '[None]'
   - name: origin/sarah_branch
+    tracking: '[None]'
+  - name: origin/sarah_branch2
+    tracking: '[None]'
+  - name: origin/tafariBranch
+    tracking: '[None]'
+  - name: origin/tafari_culzac
     tracking: '[None]'
   remotes:
   - name: origin
@@ -34,34 +52,88 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - hasani_branch
     - master
+    - sarahMaster
     - sarah_branch
+    - sarah_branch2
+    - tafari_culzac
     values:
+    - name: hasani_branch
+      remote:
+        name: origin
+        url: https://github.com/raaamen/gameJam_SKTHL.git
+      trackingBranch: hasani_branch
     - name: master
       remote:
         name: origin
         url: https://github.com/raaamen/gameJam_SKTHL.git
       trackingBranch: master
+    - name: sarahMaster
+      remote:
+        name: origin
+        url: https://github.com/raaamen/gameJam_SKTHL.git
+      trackingBranch: sarahMaster
     - name: sarah_branch
       remote:
         name: origin
         url: https://github.com/raaamen/gameJam_SKTHL.git
       trackingBranch: sarah_branch
+    - name: sarah_branch2
+      remote:
+        name: origin
+        url: https://github.com/raaamen/gameJam_SKTHL.git
+      trackingBranch: sarah_branch2
+    - name: tafari_culzac
+      remote:
+        name: origin
+        url: https://github.com/raaamen/gameJam_SKTHL.git
+      trackingBranch: tafari_culzac
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - hasani_branch
       - master
+      - sarahMaster
       - sarah_branch
+      - sarah_branch2
+      - tafariBranch
+      - tafari_culzac
     subKeyValues:
     - Values:
+      - name: hasani_branch
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
       - name: master
         remote:
           name: origin
           url: https://github.com/raaamen/gameJam_SKTHL.git
         trackingBranch: 
+      - name: sarahMaster
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
       - name: sarah_branch
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
+      - name: sarah_branch2
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
+      - name: tafariBranch
+        remote:
+          name: origin
+          url: https://github.com/raaamen/gameJam_SKTHL.git
+        trackingBranch: 
+      - name: tafari_culzac
         remote:
           name: origin
           url: https://github.com/raaamen/gameJam_SKTHL.git
