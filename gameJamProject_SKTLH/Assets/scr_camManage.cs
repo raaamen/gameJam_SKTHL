@@ -54,15 +54,17 @@ public class scr_camManage : MonoBehaviour
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[5];
                 break;
             case "Outside":
-                mainCam.GetComponent<Camera>().orthographicSize = 3.7f;
+                mainCam.GetComponent<Camera>().orthographicSize = 4.5f;
 
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
                 break;
             case "PizzaParlor":
+                mainCam.GetComponent<Camera>().orthographicSize = 3.2f;
                 pizzaBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
                 break;
             case "Arcade":
+                mainCam.GetComponent<Camera>().orthographicSize = 3.2f;
                 arcadeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
                 break;
@@ -70,6 +72,7 @@ public class scr_camManage : MonoBehaviour
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
                 break;
             case "Home":
+                mainCam.GetComponent<Camera>().orthographicSize = 3.2f;
                 homeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
                 break;
