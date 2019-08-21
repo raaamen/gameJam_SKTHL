@@ -118,35 +118,7 @@ public class scr_playerMovement : MonoBehaviour {
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Trash" && Input.GetKeyDown(KeyCode.Space))
-        {
-            if (holdingTrash == false)
-            {
-                holdingTrash = true;
-            }
 
-            switch (holdingTrash)
-            {
-                case false:
-                    //switch sprite to holding
-                    holdingTrash = true;
-                    Destroy(collision.gameObject);
-                    break;
-                case true:
-                    gameManager.GetComponent<scr_playerInv>().addRecycle();
-                    if (!invFull)
-                    {
-                        SFX.GetComponent<AudioSource>().clip = audioClipsSFX[1];
-                        SFX.GetComponent<AudioSource>().Play();
-                        Destroy(collision.gameObject);
-                    }
-                    break;
-            }
-            Debug.Log("Trash collected");
-
-
-
-        }
 
         if (collision.gameObject==pool && Input.GetKeyDown(KeyCode.Space))
         {
@@ -155,10 +127,7 @@ public class scr_playerMovement : MonoBehaviour {
 
         }
 
-        if (collision.gameObject.tag == "YellowMember" && Input.GetKeyDown(KeyCode.Space))
-        {
-            collision.gameObject.GetComponent<dialogueFaction>().sayDialogue();
-        }
+
 
 
         /*
@@ -182,6 +151,7 @@ public class scr_playerMovement : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         switch (collision.gameObject.name)
         {
             case "pizzaCollider":
@@ -221,6 +191,44 @@ public class scr_playerMovement : MonoBehaviour {
             invFull = false;
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Trash" && Input.GetKeyDown(KeyCode.Space))
+        {
+            if (holdingTrash == false)
+            {
+                holdingTrash = true;
+            }
+
+            switch (holdingTrash)
+            {
+                case false:
+                    //switch sprite to holding
+                    holdingTrash = true;
+                    Destroy(collision.gameObject);
+                    break;
+                case true:
+                    gameManager.GetComponent<scr_playerInv>().addRecycle();
+                    if (!invFull)
+                    {
+                        SFX.GetComponent<AudioSource>().clip = audioClipsSFX[1];
+                        SFX.GetComponent<AudioSource>().Play();
+                        Destroy(collision.gameObject);
+                    }
+                    break;
+            }
+            Debug.Log("Trash collected");
+
+
+
+        }
+        if (collision.gameObject.tag == "YellowMember" && Input.GetKeyDown(KeyCode.Space))
+        {
+            collision.gameObject.GetComponent<dialogueFaction>().sayDialogue();
+        }
+    }
+
     public void changePos(int pos)
     {
         switch (pos)
