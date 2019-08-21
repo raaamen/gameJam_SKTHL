@@ -17,6 +17,10 @@ public class scr_playerMovement : MonoBehaviour {
 
     public GameObject trash;
     public GameObject gameManager;
+    public GameObject pool;
+
+    public Sprite poolClean;
+    
 
     public bool holdingTrash;
     public bool invFull;
@@ -144,11 +148,16 @@ public class scr_playerMovement : MonoBehaviour {
 
         }
 
-        if (collision.gameObject.name.Equals("poolSprite") && Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject==pool && Input.GetKeyDown(KeyCode.Space))
         {
 
+            pool.GetComponent<SpriteRenderer>().sprite = poolClean;
 
+        }
 
+        if (collision.gameObject.tag == "YellowMember" && Input.GetKeyDown(KeyCode.Space))
+        {
+            collision.gameObject.GetComponent<dialogueFaction>().sayDialogue();
         }
 
 

@@ -9,6 +9,7 @@ TagManager:
   - ArcadeMachine
   - Pool
   - Table
+  - YellowMember
   layers:
   - Default
   - TransparentFX

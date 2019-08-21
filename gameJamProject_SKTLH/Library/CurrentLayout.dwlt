@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 775
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -729,13 +729,13 @@ MonoBehaviour:
       workTreeStatus: 3
     changedFilesText: 2 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2019-08-21T10:16:55.101-04:00
+      updatedTimeString: 2019-08-21T12:23:16.745-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2019-08-21T10:16:55.483-04:00
+      updatedTimeString: 2019-08-21T12:23:17.276-04:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2019-08-21T10:16:56.240-04:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -16661,7 +16661,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ccfbffff00000000
+    m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -16875,9 +16875,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d00c0000
-    m_LastClickedID: 3280
-    m_ExpandedIDs: 00000000ac090000080b0000c20b000000ca9a3b
+    m_SelectedIDs: 040d0000
+    m_LastClickedID: 3332
+    m_ExpandedIDs: 00000000a8090000240b0000ea0b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -16905,7 +16905,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac090000080b0000c20b0000
+    m_ExpandedIDs: 00000000a8090000240b0000ea0b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
