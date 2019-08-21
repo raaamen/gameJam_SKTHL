@@ -139,9 +139,17 @@ public class scr_playerMovement : MonoBehaviour {
                     break;
             }
             Debug.Log("Trash collected");
+
+
+
         }
 
+        if (collision.gameObject.name.Equals("poolSprite") && Input.GetKeyDown(KeyCode.Space))
+        {
 
+
+
+        }
 
 
         /*
@@ -161,30 +169,38 @@ public class scr_playerMovement : MonoBehaviour {
         {
 
         }
-        */  
+        */
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         switch (collision.gameObject.name)
         {
             case "pizzaCollider":
-                GetComponent<scr_camManage>().currentArea = "PizzaParlor";
+                gameManager.GetComponent<scr_camManage>().currentArea = "PizzaParlor";
                 changePos(1);
                 break;
             case "poolCollider":
-                GetComponent<scr_camManage>().currentArea = "Pool";
+                gameManager.GetComponent<scr_camManage>().currentArea = "Pool";
                 break;
             case "homeCollider":
-                GetComponent<scr_camManage>().currentArea = "Home";
+                gameManager.GetComponent<scr_camManage>().currentArea = "Home";
                 changePos(0);
                 break;
             case "arcadeCollider":
-                GetComponent<scr_camManage>().currentArea = "Arcade";
+                gameManager.GetComponent<scr_camManage>().currentArea = "Arcade";
                 changePos(2);
                 break;
             case "outsideColliderHome":
-                GetComponent<scr_camManage>().currentArea = "Outside";
+                gameManager.GetComponent<scr_camManage>().currentArea = "Outside";
                 changePos(3);
+                break;
+            case "outsideColliderPizza":
+                gameManager.GetComponent<scr_camManage>().currentArea = "Outside";
+                changePos(4);
+                break;
+            case "outsideColliderArcade":
+                gameManager.GetComponent<scr_camManage>().currentArea = "Outside";
+                changePos(5);
                 break;
         }
         if (collision.gameObject.name.Equals("obj_trashCan"))
@@ -201,16 +217,22 @@ public class scr_playerMovement : MonoBehaviour {
         switch (pos)
         {
             case 0:
-                GetComponent<Transform>().position = GetComponent<scr_camManage>().homePos;
+                GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().homePos;
                 break;
             case 1:
-                GetComponent<Transform>().position = GetComponent<scr_camManage>().pizzaPos;
+                GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().pizzaPos;
                 break;
             case 2:
-                GetComponent<Transform>().position = GetComponent<scr_camManage>().arcadePos;
+                GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().arcadePos;
                 break;
             case 3:
-                GetComponent<Transform>().position = GetComponent<scr_camManage>().outsidePos;
+                GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().outsidePosHome;
+                break;
+            case 4:
+                GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().outsidePosPizza;
+                break;
+            case 5:
+                GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().outsidePosArcade;
                 break;
         }
     }

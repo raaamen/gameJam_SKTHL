@@ -11,7 +11,9 @@ public class scr_camManage : MonoBehaviour
     public bool isInPool;
     public bool isHome;
 
-    public Vector3 outsidePos;
+    public Vector3 outsidePosHome;
+    public Vector3 outsidePosPizza;
+    public Vector3 outsidePosArcade;
     public Vector3 pizzaPos;
     public Vector3 arcadePos;
     public Vector3 poolPos;
@@ -23,6 +25,9 @@ public class scr_camManage : MonoBehaviour
     public GameObject outsidePlayer;
     public GameObject mainCam;
     public GameObject titleScreen;
+    public GameObject pizzaBG;
+    public GameObject arcadeBG;
+    public GameObject homeBG;
 
     // Use this for initialization
     void Start()
@@ -33,7 +38,9 @@ public class scr_camManage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        homeBG.SetActive(false);
+        pizzaBG.SetActive(false);
+        arcadeBG.SetActive(false);
         camPosPlayer = new Vector3(outsidePlayer.GetComponent<Transform>().position.x, outsidePlayer.GetComponent<Transform>().position.y, -10f);
         mainCam.GetComponent<Transform>().position = camPosPlayer;
         if (!GetComponent<GameManager>().bgmsrc.isPlaying)
@@ -52,16 +59,18 @@ public class scr_camManage : MonoBehaviour
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
                 break;
             case "PizzaParlor":
-
+                pizzaBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
                 break;
             case "Arcade":
+                arcadeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
                 break;
             case "Pool":
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
                 break;
             case "Home":
+                homeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
                 break;
             case "Win":
