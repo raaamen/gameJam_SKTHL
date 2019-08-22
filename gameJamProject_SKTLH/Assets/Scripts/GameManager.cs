@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 
     public int totalTrash;
     public int arcadeMachines2Clean;
+    public int pizzaTables2Clean;
 
     public AudioClip[] bgm;
     public AudioClip[] sfx;
@@ -25,16 +26,35 @@ public class GameManager : MonoBehaviour {
     public bool titleOnScreen;
     public bool everythingClean;
     public bool poolClean;
+    public bool arcadeClean;
+    public bool pizzaClean;
+
+    public Text trashLeftText;
+    public Text toCleanText;
 
 	// Use this for initialization
 	void Start () {
         totalTrash = GameObject.FindGameObjectsWithTag("Trash").Length;
         initTrash();
         arcadeMachines2Clean = 9;
+        pizzaTables2Clean = 2;
+        everythingClean = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        toCleanText.text = "Clean the pool, arcade machines, and pizza tables!";
+
+
+
+        trashLeftText.text = "Trash Remaining: "+totalTrash;
+
+        if (totalTrash <= 24)
+        {
+            roadblockPizza.SetActive(false);
+            roadblockArcade.SetActive(false);
+        }
 
         if (totalTrash == 0 && everythingClean)
         {
@@ -44,9 +64,17 @@ public class GameManager : MonoBehaviour {
             //win condition
         }
 
-        if (poolClean && arcadeMachines2Clean == 0)
+        if (poolClean && arcadeClean && pizzaClean)
         {
             everythingClean = true;
+        }
+        if (arcadeMachines2Clean == 0)
+        {
+            arcadeClean = true;
+        }
+        if (pizzaTables2Clean==0)
+        {
+            pizzaClean = true;
         }
 
     }

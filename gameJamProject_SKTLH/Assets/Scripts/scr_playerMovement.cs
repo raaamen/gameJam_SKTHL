@@ -22,7 +22,7 @@ public class scr_playerMovement : MonoBehaviour {
 
     public Sprite poolClean;
     public Sprite arcadeClean;
-    
+    public Sprite pizzaClean;
 
     public bool holdingTrash;
     public bool invFull;
@@ -129,14 +129,28 @@ public class scr_playerMovement : MonoBehaviour {
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
             gameManager.GetComponent<GameManager>().poolClean = true;
+       
 
         }
         if (collision.gameObject.tag == "arcadeMachine" && Input.GetKeyDown(KeyCode.Space))
         {
-            collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
-            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
-            SFX.GetComponent<AudioSource>().Play();
-            gameManager.GetComponent<GameManager>().arcadeMachines2Clean--;
+            if (collision.gameObject.GetComponent<SpriteRenderer>().sprite != arcadeClean)
+            {
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
+                SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
+                SFX.GetComponent<AudioSource>().Play();
+                gameManager.GetComponent<GameManager>().arcadeMachines2Clean--;
+            }
+        }
+        if (collision.gameObject.tag =="pizzaTable" && Input.GetKeyDown(KeyCode.Space))
+        {
+            if (collision.gameObject.GetComponent<SpriteRenderer>().sprite != pizzaClean)
+            {
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = pizzaClean;
+                SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
+                SFX.GetComponent<AudioSource>().Play();
+                gameManager.GetComponent<GameManager>().pizzaTables2Clean--;
+            }
         }
 
 
@@ -198,8 +212,11 @@ public class scr_playerMovement : MonoBehaviour {
         {
             //name
             gameManager.GetComponent<scr_playerInv>().depositAllTrash();
-            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[2];
-            SFX.GetComponent<AudioSource>().Play();
+            if (holdingTrash)
+            {
+                SFX.GetComponent<AudioSource>().clip = audioClipsSFX[2];
+                SFX.GetComponent<AudioSource>().Play();
+            }
             holdingTrash = false;
             invFull = false;
         }
@@ -234,11 +251,7 @@ public class scr_playerMovement : MonoBehaviour {
             Debug.Log("Trash collected");
         }
 
-        if (collision.gameObject.tag == "YellowMember" && Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("boop");
-            collision.gameObject.GetComponent<dialogueFaction>().sayDialogue();
-        }
+
     }
 
     public void changePos(int pos)

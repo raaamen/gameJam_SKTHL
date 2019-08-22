@@ -30,10 +30,7 @@ public class scr_playerInv : MonoBehaviour {
     }
     public void depositAllTrash()
     {
-        foreach (var item in inventoryFull)
-        {
-            GetComponent<GameManager>().totalTrash--;
-        }
+        GetComponent<GameManager>().totalTrash--;
         inventoryFull.Clear();
     }
 
