@@ -144,6 +144,7 @@ public class scr_playerMovement : MonoBehaviour {
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
             gameManager.GetComponent<GameManager>().pizzaTables2Clean--;
+            Debug.Log(gameManager.GetComponent<GameManager>().pizzaTables2Clean);
         }
 
 
@@ -205,8 +206,11 @@ public class scr_playerMovement : MonoBehaviour {
         {
             //name
             gameManager.GetComponent<scr_playerInv>().depositAllTrash();
-            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[2];
-            SFX.GetComponent<AudioSource>().Play();
+            if (holdingTrash)
+            {
+                SFX.GetComponent<AudioSource>().clip = audioClipsSFX[2];
+                SFX.GetComponent<AudioSource>().Play();
+            }
             holdingTrash = false;
             invFull = false;
         }

@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour {
     public bool titleOnScreen;
     public bool everythingClean;
     public bool poolClean;
+    public bool arcadeClean;
+    public bool pizzaClean;
 
 	// Use this for initialization
 	void Start () {
@@ -33,12 +35,13 @@ public class GameManager : MonoBehaviour {
         initTrash();
         arcadeMachines2Clean = 9;
         pizzaTables2Clean = 2;
+        everythingClean = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (totalTrash == 15)
+        if (totalTrash == 24)
         {
             roadblockPizza.SetActive(false);
             roadblockArcade.SetActive(false);
@@ -52,9 +55,17 @@ public class GameManager : MonoBehaviour {
             //win condition
         }
 
-        if (poolClean && arcadeMachines2Clean == 0 && pizzaTables2Clean == 0)
+        if (poolClean && arcadeClean && pizzaClean)
         {
             everythingClean = true;
+        }
+        if (arcadeMachines2Clean <= 0)
+        {
+            arcadeClean = true;
+        }
+        if (pizzaTables2Clean<=0)
+        {
+            pizzaClean = true;
         }
 
     }
