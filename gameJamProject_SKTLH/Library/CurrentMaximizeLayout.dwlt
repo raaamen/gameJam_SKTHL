@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 12975
+  controlID: 4830
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -60,10 +60,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -303.5
-    m_HBaseRangeMax: 303.5
-    m_VBaseRangeMin: -170.75
-    m_VBaseRangeMax: 170.75
+    m_HBaseRangeMin: -177.75
+    m_HBaseRangeMax: 177.75
+    m_VBaseRangeMin: -100
+    m_VBaseRangeMax: 100
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -81,25 +81,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1440
-      height: 683
+      width: 720
+      height: 400
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 720, y: 341.5}
+    m_Translation: {x: 360, y: 200}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -360
-      y: -170.75
-      width: 720
-      height: 341.5
+      x: -180
+      y: -100
+      width: 360
+      height: 200
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 2880, y: 1400}
+  m_LastWindowPixelSize: {x: 1440, y: 834}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -155,10 +155,10 @@ MonoBehaviour:
     height: 700
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 848.0023}
-    m_SelectedIDs: 920e0000
-    m_LastClickedID: 3730
-    m_ExpandedIDs: 5a8ffcffd6bcfeffc845ffff5aeeffffe4fbffff000000008e0e0000f00e0000960f0000
+    scrollPos: {x: 0, y: 998.99854}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 2c0bfeff6420ffff0021ffff3e22ffff7a47ffff1448ffff5249ffffe4fbffff00000000f60f00007e800000c8800000ca81000028820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 342}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 12976
+  controlID: 4831
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,14 +260,14 @@ MonoBehaviour:
     height: 417
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 384.4407079219818
+  lastFramingTime: 2965.001044034958
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -21.287184, y: 3.7489522, z: -0.08708686}
+    m_Target: {x: 544.4971, y: 254.12393, z: -4.549487}
     speed: 2
-    m_Value: {x: -21.287184, y: 3.7489522, z: -0.08708686}
+    m_Value: {x: 544.4971, y: 254.12393, z: -4.549487}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -299,9 +299,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 40.26025
+    m_Target: 454.63086
     speed: 2
-    m_Value: 40.26025
+    m_Value: 454.63086
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -516,20 +516,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Fonts
   m_ViewMode: 1
   m_StartGridSize: 73
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Fonts
   m_LastFoldersGridSize: 73
   m_LastProjectPath: /Users/sia/Desktop/Git/gameJam_SKTHL/gameJamProject_SKTLH
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 15}
-    m_SelectedIDs: 6c0a0000
-    m_LastClickedID: 2668
-    m_ExpandedIDs: 00000000aa0900003c0b00000a0c000000ca9a3b
+    m_SelectedIDs: 440c0000
+    m_LastClickedID: 3140
+    m_ExpandedIDs: 00000000ae090000480b00001e0c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -557,7 +557,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa0900003c0b00000a0c000000ca9a3b
+    m_ExpandedIDs: 00000000ae090000480b00001e0c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,8 +582,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 920e0000
-    m_LastClickedInstanceID: 3730
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f0330000ae320000482b0000022b0000de2a0000dc0a0000702e0000983a0000b83a000000000000020b0000800b0000a00b0000ee300000f6300000da2f0000040a00007c6d0000ae9ffaff
     m_RenameOverlay:
@@ -1547,13 +1547,13 @@ MonoBehaviour:
       workTreeStatus: 3
     changedFilesText: 2 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2019-08-22T11:29:08.698-04:00
+      updatedTimeString: 2019-08-22T14:49:00.760-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2019-08-22T13:44:31.607-04:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2019-08-22T13:43:44.314-04:00
+      updatedTimeString: 2019-08-22T15:47:41.850-04:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0

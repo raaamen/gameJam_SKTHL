@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour {
     public bool arcadeClean;
     public bool pizzaClean;
 
+    public Text trashLeftText;
+    public Text toCleanText;
+
 	// Use this for initialization
 	void Start () {
         totalTrash = GameObject.FindGameObjectsWithTag("Trash").Length;
@@ -41,7 +44,13 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (totalTrash == 24)
+        toCleanText.text = "Clean the pool, arcade machines, and pizza tables!";
+
+
+
+        trashLeftText.text = "Trash Remaining: "+totalTrash;
+
+        if (totalTrash <= 24)
         {
             roadblockPizza.SetActive(false);
             roadblockArcade.SetActive(false);

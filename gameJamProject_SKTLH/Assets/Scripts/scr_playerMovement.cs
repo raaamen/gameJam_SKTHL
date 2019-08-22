@@ -134,21 +134,21 @@ public class scr_playerMovement : MonoBehaviour {
         }
         if (collision.gameObject.tag == "arcadeMachine" && Input.GetKeyDown(KeyCode.Space))
         {
-            collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
-            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
-            SFX.GetComponent<AudioSource>().Play();
             if (collision.gameObject.GetComponent<SpriteRenderer>().sprite != arcadeClean)
             {
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
+                SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
+                SFX.GetComponent<AudioSource>().Play();
                 gameManager.GetComponent<GameManager>().arcadeMachines2Clean--;
             }
         }
         if (collision.gameObject.tag =="pizzaTable" && Input.GetKeyDown(KeyCode.Space))
         {
-            collision.gameObject.GetComponent<SpriteRenderer>().sprite = pizzaClean;
-            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
-            SFX.GetComponent<AudioSource>().Play();
             if (collision.gameObject.GetComponent<SpriteRenderer>().sprite != pizzaClean)
             {
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = pizzaClean;
+                SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
+                SFX.GetComponent<AudioSource>().Play();
                 gameManager.GetComponent<GameManager>().pizzaTables2Clean--;
             }
         }
@@ -251,11 +251,7 @@ public class scr_playerMovement : MonoBehaviour {
             Debug.Log("Trash collected");
         }
 
-        if (collision.gameObject.tag == "YellowMember" && Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("boop");
-            collision.gameObject.GetComponent<dialogueFaction>().sayDialogue();
-        }
+
     }
 
     public void changePos(int pos)
