@@ -18,8 +18,10 @@ public class scr_playerMovement : MonoBehaviour {
     public GameObject trash;
     public GameObject gameManager;
     public GameObject pool;
+    
 
     public Sprite poolClean;
+    public Sprite arcadeClean;
     
 
     public bool holdingTrash;
@@ -127,6 +129,12 @@ public class scr_playerMovement : MonoBehaviour {
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
 
+        }
+        if (collision.gameObject.tag == "arcadeMachine" && Input.GetKeyDown(KeyCode.Space))
+        {
+            collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
+            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
+            SFX.GetComponent<AudioSource>().Play();
         }
 
 

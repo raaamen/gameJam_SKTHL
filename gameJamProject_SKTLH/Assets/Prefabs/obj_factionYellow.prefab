@@ -127,8 +127,9 @@ MonoBehaviour:
   - Come on down to the Delta faction for some great games to play!
   - "I\u2019m in the mood to PAAAARRRTAAAAAYYYYY!"
   dialogueChoice: 0
-  dialoguePan: {fileID: 0}
-  dialogue: {fileID: 0}
+  dialoguePan: {fileID: 1481661471931974, guid: 0a9904083f55ad14bbda95a3f03abb46,
+    type: 2}
+  dialogue: {fileID: 114115847178126076, guid: 0a9904083f55ad14bbda95a3f03abb46, type: 2}
   dialogueTimer: 0
   countTime: 0
 --- !u!212 &212197501389600390
