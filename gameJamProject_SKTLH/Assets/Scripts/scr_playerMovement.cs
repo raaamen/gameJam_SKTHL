@@ -18,8 +18,10 @@ public class scr_playerMovement : MonoBehaviour {
     public GameObject trash;
     public GameObject gameManager;
     public GameObject pool;
+    
 
     public Sprite poolClean;
+    public Sprite arcadeClean;
     
 
     public bool holdingTrash;
@@ -126,7 +128,15 @@ public class scr_playerMovement : MonoBehaviour {
             pool.GetComponent<SpriteRenderer>().sprite = poolClean;
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
+            gameManager.GetComponent<GameManager>().poolClean = true;
 
+        }
+        if (collision.gameObject.tag == "arcadeMachine" && Input.GetKeyDown(KeyCode.Space))
+        {
+            collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
+            SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
+            SFX.GetComponent<AudioSource>().Play();
+            gameManager.GetComponent<GameManager>().arcadeMachines2Clean--;
         }
 
 
@@ -153,7 +163,7 @@ public class scr_playerMovement : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+       // Debug.Log(collision.gameObject.name);
         switch (collision.gameObject.name)
         {
             case "pizzaCollider":
@@ -184,8 +194,9 @@ public class scr_playerMovement : MonoBehaviour {
                 changePos(5);
                 break;
         }
-        if (collision.gameObject.name.Equals("obj_trashCan"))
+        if (collision.gameObject.tag == "trashCan")
         {
+            //name
             gameManager.GetComponent<scr_playerInv>().depositAllTrash();
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[2];
             SFX.GetComponent<AudioSource>().Play();
@@ -221,12 +232,11 @@ public class scr_playerMovement : MonoBehaviour {
                     break;
             }
             Debug.Log("Trash collected");
-
-
-
         }
+
         if (collision.gameObject.tag == "YellowMember" && Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("boop");
             collision.gameObject.GetComponent<dialogueFaction>().sayDialogue();
         }
     }

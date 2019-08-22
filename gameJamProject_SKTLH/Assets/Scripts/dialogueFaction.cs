@@ -19,7 +19,9 @@ public class dialogueFaction : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        dialoguePan.SetActive(false);
         dialogueTimer = 0;
+        dialoguePan.SetActive(false);
         countTime = false;
 	}
 	

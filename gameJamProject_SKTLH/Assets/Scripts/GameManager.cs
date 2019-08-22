@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour {
     public GameObject playerObj;
     public GameObject trashObj;
     public GameObject winScreen;
+    public GameObject roadblockPizza;
+    public GameObject roadblockArcade;
 
     public int totalTrash;
+    public int arcadeMachines2Clean;
 
     public AudioClip[] bgm;
     public AudioClip[] sfx;
@@ -20,17 +23,20 @@ public class GameManager : MonoBehaviour {
 
     public bool hasWon;
     public bool titleOnScreen;
+    public bool everythingClean;
+    public bool poolClean;
 
 	// Use this for initialization
 	void Start () {
         totalTrash = GameObject.FindGameObjectsWithTag("Trash").Length;
         initTrash();
+        arcadeMachines2Clean = 9;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (totalTrash == 0)
+        if (totalTrash == 0 && everythingClean)
         {
             hasWon = true;
             winScreen.SetActive(true);
@@ -38,7 +44,10 @@ public class GameManager : MonoBehaviour {
             //win condition
         }
 
-
+        if (poolClean && arcadeMachines2Clean == 0)
+        {
+            everythingClean = true;
+        }
 
     }
 
