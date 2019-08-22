@@ -59,11 +59,11 @@ public class GameManager : MonoBehaviour {
         {
             everythingClean = true;
         }
-        if (arcadeMachines2Clean <= 0)
+        if (arcadeMachines2Clean == 0)
         {
             arcadeClean = true;
         }
-        if (pizzaTables2Clean<=0)
+        if (pizzaTables2Clean==0)
         {
             pizzaClean = true;
         }

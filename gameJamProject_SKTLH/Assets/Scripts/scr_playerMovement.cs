@@ -129,6 +129,7 @@ public class scr_playerMovement : MonoBehaviour {
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
             gameManager.GetComponent<GameManager>().poolClean = true;
+       
 
         }
         if (collision.gameObject.tag == "arcadeMachine" && Input.GetKeyDown(KeyCode.Space))
@@ -136,15 +137,20 @@ public class scr_playerMovement : MonoBehaviour {
             collision.gameObject.GetComponent<SpriteRenderer>().sprite = arcadeClean;
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
-            gameManager.GetComponent<GameManager>().arcadeMachines2Clean--;
+            if (collision.gameObject.GetComponent<SpriteRenderer>().sprite != arcadeClean)
+            {
+                gameManager.GetComponent<GameManager>().arcadeMachines2Clean--;
+            }
         }
         if (collision.gameObject.tag =="pizzaTable" && Input.GetKeyDown(KeyCode.Space))
         {
             collision.gameObject.GetComponent<SpriteRenderer>().sprite = pizzaClean;
             SFX.GetComponent<AudioSource>().clip = audioClipsSFX[4];
             SFX.GetComponent<AudioSource>().Play();
-            gameManager.GetComponent<GameManager>().pizzaTables2Clean--;
-            Debug.Log(gameManager.GetComponent<GameManager>().pizzaTables2Clean);
+            if (collision.gameObject.GetComponent<SpriteRenderer>().sprite != pizzaClean)
+            {
+                gameManager.GetComponent<GameManager>().pizzaTables2Clean--;
+            }
         }
 
 
