@@ -21,9 +21,6 @@ GameObject:
   - component: {fileID: 4399397726634930}
   - component: {fileID: 212871679752579776}
   - component: {fileID: 95324846497447046}
-  - component: {fileID: 114349637563594508}
-  - component: {fileID: 61376217635384734}
-  - component: {fileID: 50957006619006468}
   m_Layer: 0
   m_Name: obj_factionRed
   m_TagString: YellowMember
@@ -44,51 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50957006619006468
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1019659421175714}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!61 &61376217635384734
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1019659421175714}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00000035762787, y: 0.008283749}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46, y: 0.58}
-    newSize: {x: 10.67, y: 10.67}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6367167, y: 0.7211938}
-  m_EdgeRadius: 0
 --- !u!95 &95324846497447046
 Animator:
   serializedVersion: 3
@@ -107,31 +59,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114349637563594508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1019659421175714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee194775e208f401d97d653fca2a7ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueOptions:
-  - "There\u2019s so much trash everywhere\u2026"
-  - Hey there! Hope you have a good day!
-  - Pick up enough trash and you might be able to go to other faction bases.
-  - Head over to the Omega faction for a great time in the pool!
-  - Make sure you go to the Alpha faction for some dope pizza!
-  - Come on down to the Delta faction for some great games to play!
-  - "I\u2019m in the mood to PAAAARRRTAAAAAYYYYY!"
-  dialogueChoice: 0
-  dialoguePan: {fileID: 1481661471931974, guid: 0a9904083f55ad14bbda95a3f03abb46,
-    type: 2}
-  dialogue: {fileID: 114115847178126076, guid: 0a9904083f55ad14bbda95a3f03abb46, type: 2}
-  dialogueTimer: 0
-  countTime: 0
 --- !u!212 &212871679752579776
 SpriteRenderer:
   m_ObjectHideFlags: 1
