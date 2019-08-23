@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         totalTrash = GameObject.FindGameObjectsWithTag("Trash").Length;
-        initTrash();
         arcadeMachines2Clean = 9;
         pizzaTables2Clean = 2;
         everythingClean = false;
@@ -84,36 +83,6 @@ public class GameManager : MonoBehaviour {
     //once all garbage is gone, win condition
     //roadblocks to block way
 
-    public void initTrash()
-    {
-
-        for (int i = 0; i < 11; i++)
-        {
-            //Instantiate at positions
-            //int x = Random.Range();
-            Vector3 vec = new Vector3();
-
-        }
-        for (int i = 0; i < 11; i++)
-        {
-
-        }
-        for (int i = 0; i < 11; i++)
-        {
-
-        }
-        for (int i = 0; i < 11; i++)
-        {
-
-        }
-        for (int i = 0; i < 11; i++)
-        {
-
-        }
-
-
-
-
-    }
+    
 
 }

@@ -156,28 +156,9 @@ public class scr_playerMovement : MonoBehaviour {
 
 
 
-        /*
-        if (collision.gameObject.tag == "ArcadeMachine")
-        {
-
-        }
-        if (collision.gameObject.tag == "Pool")
-        {
-
-        }
-        if (collision.gameObject.tag == "Table")
-        {
-
-        }
-        if (collision.gameObject.tag == "ArcadeMachine")
-        {
-
-        }
-        */
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       // Debug.Log(collision.gameObject.name);
         switch (collision.gameObject.name)
         {
             case "pizzaCollider":

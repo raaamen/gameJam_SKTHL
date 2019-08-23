@@ -5,11 +5,6 @@ using UnityEngine;
 public class scr_camManage : MonoBehaviour
 {
 
-    public bool isOutside;
-    public bool isInPizzaShop;
-    public bool isInArcade;
-    public bool isInPool;
-    public bool isHome;
 
     public Vector3 outsidePosHome;
     public Vector3 outsidePosPizza;
@@ -28,11 +23,15 @@ public class scr_camManage : MonoBehaviour
     public GameObject pizzaBG;
     public GameObject arcadeBG;
     public GameObject homeBG;
+    public GameObject hidePizza;
+    public GameObject hideArcade;
+    public GameObject hideHome;
 
     // Use this for initialization
     void Start()
     {
         currentArea = "Title";
+        hideHome.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,27 +50,38 @@ public class scr_camManage : MonoBehaviour
         {
             case "Title":
                 titleScreen.SetActive(true);
+                hideHome.SetActive(true);
+                hideArcade.SetActive(true);
+                hidePizza.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[5];
                 break;
             case "Outside":
+                hideHome.SetActive(true);
+                hideArcade.SetActive(true);
+                hidePizza.SetActive(true);
                 mainCam.GetComponent<Camera>().orthographicSize = 4.5f;
-
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[0];
                 break;
             case "PizzaParlor":
+                hideHome.SetActive(true);
+                hideArcade.SetActive(true);
+                hidePizza.SetActive(false);
                 mainCam.GetComponent<Camera>().orthographicSize = 3.2f;
                 pizzaBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[1];
                 break;
             case "Arcade":
+                hideHome.SetActive(true);
+                hideArcade.SetActive(false);
+                hidePizza.SetActive(true);
                 mainCam.GetComponent<Camera>().orthographicSize = 3.2f;
                 arcadeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[2];
                 break;
-            case "Pool":
-                GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[3];
-                break;
             case "Home":
+                hideHome.SetActive(false);
+                hideArcade.SetActive(true);
+                hidePizza.SetActive(true);
                 mainCam.GetComponent<Camera>().orthographicSize = 3.2f;
                 homeBG.SetActive(true);
                 GetComponent<GameManager>().bgmsrc.clip = GetComponent<GameManager>().bgm[4];
