@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class scr_playerMovement : MonoBehaviour {
 
@@ -18,7 +19,6 @@ public class scr_playerMovement : MonoBehaviour {
     public GameObject trash;
     public GameObject gameManager;
     public GameObject pool;
-    
 
     public Sprite poolClean;
     public Sprite arcadeClean;
@@ -26,6 +26,7 @@ public class scr_playerMovement : MonoBehaviour {
 
     public bool holdingTrash;
     public bool invFull;
+    public bool canMove;
 
     public AudioSource SFX;
 
@@ -34,7 +35,7 @@ public class scr_playerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         holdingTrash = false;
-        
+        canMove = true;
 	}
 	
 	// Update is called once per frame
@@ -43,7 +44,7 @@ public class scr_playerMovement : MonoBehaviour {
         //player movement is WASD
         if (isActiveAndEnabled) {
 
-            if (Input.GetKey(KeyCode.W))
+            if (canMove && Input.GetKey(KeyCode.W))
             {
                 GetComponent<Transform>().position += upSpd;
                 switch (holdingTrash)
@@ -56,7 +57,7 @@ public class scr_playerMovement : MonoBehaviour {
                         break;
                 }
             }
-            else if (Input.GetKey(KeyCode.A))
+            else if (canMove && Input.GetKey(KeyCode.A))
             {
                 GetComponent<Transform>().position += leftSpd;
                 GetComponent<Transform>().localScale = flipXA;
@@ -71,7 +72,7 @@ public class scr_playerMovement : MonoBehaviour {
                 }
 
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (canMove && Input.GetKey(KeyCode.S))
             {
                 GetComponent<Transform>().position += downSpd;
                 switch (holdingTrash)
@@ -84,7 +85,7 @@ public class scr_playerMovement : MonoBehaviour {
                         break;
                 }
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (canMove && Input.GetKey(KeyCode.D))
             {
                 GetComponent<Transform>().position += rightSpd;
                 GetComponent<Transform>().localScale = flipXD;
@@ -205,7 +206,7 @@ public class scr_playerMovement : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Trash" && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (holdingTrash == false)
             {
@@ -237,6 +238,8 @@ public class scr_playerMovement : MonoBehaviour {
 
     public void changePos(int pos)
     {
+
+
         switch (pos)
         {
             case 0:
@@ -258,6 +261,17 @@ public class scr_playerMovement : MonoBehaviour {
                 GetComponent<Transform>().position = gameManager.GetComponent<scr_camManage>().outsidePosArcade;
                 break;
         }
+
+        StartCoroutine(countdown());
     }
+
+    private IEnumerator countdown()
+    {
+        canMove = false;
+        yield return new WaitForSeconds(0.5f);
+        canMove = true;
+    }
+   
+
 
 }
